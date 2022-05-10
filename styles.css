@@ -1,7 +1,10 @@
 body{
     margin: 0;
+    text-align: center;
+}
+
+bg-image{
     background-image: url(../img/tofino.png);
     background-position: center;
     background-size: cover;
-    text-align: center;
 }
