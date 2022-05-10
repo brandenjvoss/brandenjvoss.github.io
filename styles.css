@@ -1,5 +1,7 @@
 body{
     margin: 0;
     background-image: url(../img/tofino.png);
-    text-align: center;
+    background-position: center;
+    background-size: cover;
+    text-align: bottom;
 }
