@@ -1,10 +1,19 @@
-body{
+body {
     margin: 0;
     background-image: url(../img/tofino.png);
     background-position: relative;
     top: 6px;
     background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
+}
+
+text {
+    text-align: center;
+    font-size: 2rem;
+    color:  black;
+    font-family: 'Raleway';
+    padding-top: 10px
 }
 
 .container {
@@ -13,11 +22,11 @@ body{
 }
 
 footer {
-  background: #fff;
+  background: rgb(105, 193, 222);
 }
 
 nav {
-  float: right;
+  float: center;
 }
 
 nav ul {
