@@ -14,6 +14,7 @@ body{
 
 header {
   background: #55d6aa;
+  position: fixed;
 }
 
 nav {
