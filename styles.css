@@ -43,7 +43,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #fff;
+  color: #808080;
 }
 
 nav a::before {
