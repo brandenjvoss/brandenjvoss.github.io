@@ -15,17 +15,6 @@ header {
   background: #55d6aa;
 }
 
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-.logo {
-  float: left;
-  padding: 10px 0;
-}
-
 nav {
   float: right;
 }
