@@ -1,28 +1,32 @@
 body {
     margin: 0;
-    background-image: url(../img/tofino.png);
+    background-image: url(img/tofino.png);
     background-position: relative;
-    top: 6px;
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
 }
 
-text {
+.hcontainer {
+    padding-bottom:280px;
+    z-index: 4;
+    position:relative;
+	width: 95%;
     text-align: center;
-    font-size: 2rem;
-    color:  black;
-    font-family: 'Raleway';
-    padding-top: 10px
 }
 
-.container {
-	width: 80%;
-	margin: 0 auto;
+.nav-container {
+    position: -webkit-sticky;
+    position: sticky;
+    padding-bottom:280px;
+    z-index: 4;
+	width: 95%;
+    text-align: center;
 }
 
 footer {
-  background: white;
+    background: none;
+    align-items: center;
 }
 
 nav {
@@ -44,7 +48,7 @@ nav li {
 }
 
 nav a {
-  color: #444;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
@@ -69,4 +73,84 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+.body-text {
+    background-color: rgb(67, 66, 66);
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    margin: 1% auto;
+    max-width: 650px;
+    line-height: 1.5;
+    text-align: left;
+    text-justify: inter-word;
+  }
+  .justify{
+    text-align:justify;
+  }
+
+  .quick-links-container p {
+    line-height: 2;
+  }
+
+  .links-container {
+    position: absolute;
+    right: 0;
+    width: 20%;
+    min-width: 80px;
+    display: grid;
+    float: right;
+    padding: 3%;
+  }
+  
+  #links-container1 {
+    top: 15%;
+  }
+
+  .links-container {
+    padding: 0;
+    width: auto;
+    font-size: 12px;
+  }
+
+  #links-container1 {
+    top: 20%;
+  }
+
+  .links-inner {
+    color: white;
+    margin-bottom: 20%;
+    min-width: 120px;
+  }
+
+  .square-button {
+    opacity: 1;
+    display: block;
+    text-decoration: none;
+    color: #788E99;
+    border: 1px solid #788E99;
+    border-radius: 3px;
+    transition: .4s;
+    text-align: center;
+    min-width: 90px;
+    margin: 2.75px 7px 2.75px 0;
+    padding: 3px 10px;
+  }
+
+  .square-button:hover {
+    background: #788E99;
+    color: white;
+  }
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-slide,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
+}
+
+.fp-responsive .fp-auto-height-responsive.fp-section,
+.fp-responsive .fp-auto-height-responsive .fp-slide,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+    height: auto !important;
 }
