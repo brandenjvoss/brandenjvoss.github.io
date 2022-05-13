@@ -1,17 +1,22 @@
 body {
     margin: 0;
-    background-image: url(img/tofino.png);
-    background-position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
     text-align: center;
+}
+
+.background{
+    background-image: url(img/tofino.png);
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hcontainer {
     padding-bottom:280px;
     z-index: 4;
     position:relative;
-	width: 95%;
+	width: 100%;
     text-align: center;
 }
 
@@ -20,7 +25,7 @@ body {
     position: sticky;
     padding-bottom:280px;
     z-index: 4;
-	width: 95%;
+	width: 100%;
     text-align: center;
 }
 
@@ -73,6 +78,14 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+.pcontainer {
+    padding-bottom:210px;
+    z-index: 4;
+    position:relative;
+	width: 100%;
+    text-align: center;
 }
 
 .body-text {
@@ -142,15 +155,3 @@ nav a:hover::before {
     background: #788E99;
     color: white;
   }
-
-.fp-auto-height.fp-section,
-.fp-auto-height .fp-slide,
-.fp-auto-height .fp-tableCell{
-    height: auto !important;
-}
-
-.fp-responsive .fp-auto-height-responsive.fp-section,
-.fp-responsive .fp-auto-height-responsive .fp-slide,
-.fp-responsive .fp-auto-height-responsive .fp-tableCell {
-    height: auto !important;
-}
