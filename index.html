@@ -19,9 +19,7 @@
 
 <!------------------------------- Home Section ------------------------------->
 
-    <div id="fullpage">
-        
-        <div class="homeBackground">
+    <div class="homeBackground">
             <div id="home">
                 <div class="container">
                     <h1 style="font-size: 9rem; color: white; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 10px">Branden Voss</h1>
@@ -29,33 +27,36 @@
                     <div class="nav-container">
                         <nav>
                             <ul>
-                                <li><a href="#home">Home</a></li>
                                 <li><a href="#profile">Profile</a></li>
+                                <li><a href="#ECCE">ECCE 2022</a></li>
                                 <li><a href="#projects">Projects</a></li>
+                                <li><a href="#experience">Experience</a></li>
                                 <li><a href="#skills">Skills</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
-                    <p style="font-size: 2.6rem; color: white; font-family: 'Raleway'; padding-bottom: 280px;">My Online Resume and Portfolio (In-progress)</p>
-                    <p style="text-align: center; color: white;">I put this website together out of interest using HTML and CSS. I wrote it in Visual Studio Code and it is hosted through GitHub Pages.</p>
+                    <p style="font-size: 2.6rem; color: white; font-family: 'Raleway'; padding-bottom: 450px;">My Online Resume and Portfolio (In-progress)</p>
+                    <p style="text-align: center; color: white;">I put this website together out of interest to learn new skills using HTML and CSS. I wrote it in Visual Studio Code and it is hosted through GitHub Pages.</p>
                 </div>
             </div>
         </div>
 
+        <nav class="navbar navbar-inverse navbarstyle">
+            <ul class="nav navbar-nav" style="margin-top: -10px;">
+              <li><a href="#home" class="navbuttonformat intro-1">Home</a></li>
+              <li><a href="#profile" class="navbuttonformat intro-start">Profile</a></li>
+              <li><a href="#ECCE" class="navbuttonformat intro-start">ECCE 2022</a></li>
+              <li><a href="#projects" class="navbuttonformat intro-3">Projects</a></li>
+              <li><a href="#experience" class="navbuttonformat intro-3">Experience</a></li>
+              <li><a href="#skills" class="navbuttonformat intro-4">Skills</a></li>
+              <li><a href="#contact" class="navbuttonformat intro-4">Contact</a></li>
+            </ul>
+        </nav>
+
 <!------------------------------- Profile Section ------------------------------->
 
         <div id="profile">
-
-            <nav class="navbar navbar-inverse navbarstyle">
-                <ul class="nav navbar-nav" style="margin-top: -10px;">
-                  <li><a href="#home" class="navbuttonformat intro-1">Home</a></li>
-                  <li><a href="#profile" class="navbuttonformat intro-start">Profile</a></li>
-                  <li><a href="#projects" class="navbuttonformat intro-3">Projects</a></li>
-                  <li><a href="#skills" class="navbuttonformat intro-4">Skills</a></li>
-                  <li><a href="#contact" class="navbuttonformat intro-4">Contact</a></li>
-                </ul>
-            </nav>
 
             <div class="container">
                 <h1 style="color: #607D8B; margin-top: 60px">Profile</h1>
@@ -64,37 +65,39 @@
 
                 <div>
                     <div class="col-md-4">
-                        <h3 style="color: #607D8B; padding-top: 50px;">Education</h3>
+                        <h4 style="color: #607D8B; padding-top: 100px;">Education</h4>
                         <p>I am in my fourth year at Uvic and have been a forward on the Vikes hockey team since I started my studies. This last season I was given the opportunity to be a alternate captain and took on responsibilities to help lead my teammates.</p>
+                        <img src="img/education.png">
                     </div>
                 
                     <div class="col-md-4">
                         <img src="img/profile.png">
-                        <h3 style="color: #607D8B;">About Me</h3>
+                        <h4 style="color: #607D8B;">About Me</h4>
                         <p>I am most interested in... I grew up in Camrose, Alberta... I hope to... My goals are... Im passionate about... I love spending time with friends and family because thats whats matters most.</p>
                     </div>
 
                     <div class="col-md-4">
-                        <h3 style="color: #607D8B; padding-top: 50px;">Interests</h3>
+                        <h4 style="color: #607D8B; padding-top: 100px;">Interests</h4>
                         <p>I enjoy playing sports, fishing, hiking and being around friends. I love physical activity and I'm always in to learn new skills and try new things.</p>
+                        <br>
+                        <img src="img/vikesHockey.png">
                     </div>
                 </div>
             </div>
             <p style="text-align: center; margin-bottom: 95px; line-height: 170%;"><strong>Check out my</strong><a href="docs/BrandenVoss_Resume.pdf" style="color:#607D8B" target="_blank"><i class="fas fa-external-link-alt"> resume</i></a><strong> here.</strong></p>
         </div>
-    </div>
 
 <!------------------------------- Projects Section ------------------------------->
 
         <div class="container" style="background-color: lightgray;">
             <div id="projects">
                 <h1 style="color: #607D8B; margin-top: 60px">Projects</h1>
-                <p>These are a few projects I have done inspired by personal interest, work experience and school related.</p>
-                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4;">
+                <p>These are a few projects I have done, inspired by personal interest, work experience and school related.</p>
+                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4">
             </div>
             <div class="cardsclass container" style="width: 800px; color: lightcyan">
 
-                <div class="row">
+                <div class="row" style="padding-top: 100px;">
 
                   <!-- Electric Motor Fault Detection Model -->
                     <div class="col-md-6 col-sm-12 col-xs-12">
@@ -141,7 +144,7 @@
                                 <h3>Autonomous Robot</h3>
                                 <p></p>
                                 <p><strong>Skills:</strong><br></p>
-                                <a href="docs/AlarmClockReport.pdf">Read more</a>
+                                <a href="projects\EMresearch.html">Read more</a>
                                 <!-- <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
                                 <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
                                 </span> -->
@@ -171,14 +174,14 @@
 
 <!------------------------------- Experience Section ------------------------------->
 
-        <div id="experience" class="section pagecontentstyle fp-auto-height" > 
+        <div id="experience"> 
             <div class="container" style="width:800px; text-align: center;">
                 <h1 style="color: #607D8B; margin-top: 60px;">Experience</h1>
                 <p style="color: black;"></p>
                 <hr> 
-                      
-                <div class="experiences">
-                    <h3 style="color: #607D8B;text-align: left;">EDUCATION:</h3>
+                  
+                <div>
+                    <h3 style="color: #607D8B;text-align: left;">Education:</h3>
 
                     <div class="row" style="padding-bottom: 2.5vh;" >
                         <div class="col-md-4" style="text-align: left;">
@@ -187,7 +190,7 @@
                         </div>
                         <div class="col-md-8" style="text-align: left;line-height: 100%;">
                             <h5 style="font-weight: bold;">Bachelor of Engineering (BEng) - Electrical Engineering (Co-op)</h5>
-                            <p style="color: #757575;line-height: 150%;">Info here</p>
+                            <p style="color: #757575;line-height: 150%;">Assistant Captain for the University of Victoria Vikes Men’s Hockey Team</p>
                             <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span> 
                             <span style="color:#607D8B;"> Victoria, BC</span>  
                         </div>
@@ -196,19 +199,19 @@
                         <br>
                         
                         <hr>
-                        <h3 style="color: #607D8B;text-align: left;">CAREER:</h3>
+                        <h3 style="color: #607D8B;text-align: left;">Career:</h3>
                         <div class="row" style="padding-bottom: 2.5vh;">
                             <div class="col-md-4" style="text-align: left;">
                                 <h5 style="font-weight: bold">Industrial Plankton</h4>
                                 <p style="color: #757575;line-height: 80%;">Jan 2022 - Apr 2022</p>
                             </div>
                             <div class="col-md-8" style="text-align: justify;line-height: 100%;">
-                                <h5 style="font-weight: bold;">Electrical Engineer (Co-op)</h5>
-                                <p style="color: #757575;line-height: 160%;">Info here</p>
+                                <h5 style="font-weight: bold;">Manufacturing and Design Engineer (Co-op)</h5>
+                                <p style="color: #757575;line-height: 160%;">Worked with a team of professionals to aid in design and manufacturing of Industrial Plankton’s product line of bioreactors for aquaculture. </p>
                                 <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
                                 <span style="color:#607D8B;">Victoria, BC &nbsp;|&nbsp;</span>
                                 <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://generalfusion.com/" target="_blank">generalfusion.com</a>
+                                <a style="color:#607D8B;" href="https://industrialplankton.com" target="_blank">industrialplankton.com</a>
                             </div>
                         </div>
 
@@ -218,12 +221,12 @@
                                 <p style="color: #757575;line-height: 80%;">May 2021 - Sep. 2021</p>
                             </div>
                             <div class="col-md-8" style="text-align: justify;line-height: 100%;">
-                                <h5 style="font-weight: bold;">Electrical Engineer (Co-op)</h5>
-                                <p style="color: #757575;line-height: 160%;">Info here</p>
+                                <h5 style="font-weight: bold;">Electrical Engineering Undergraduate Research (Co-op)</h5>
+                                <p style="color: #757575;line-height: 160%;">Worked in research and development to create a robust machine learning algorithm for detecting static eccentric faults in three phase induction motors using MATLAB. During my work I had the opportunity to author a conference proceeding which I will be presenting at IEEE Energy Conversion Congress and Exposition 2022 in Detroit, Michigan.</p>
                                 <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
                                 <span style="color:#607D8B;">Victoria, BC &nbsp;|&nbsp;</span>
                                 <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://www.ergonomyx.com/" target="_blank">ergonomyx.com</a>
+                                <a style="color:#607D8B;" href="https://ece.engr.uvic.ca/~ilampari/" target="_blank">ece.engr.uvic.ca/~ilampari/</a>
                             </div>
                         </div>
 
@@ -235,12 +238,12 @@
                                 <p style="color: #757575;line-height: 80%;">Jan 2020 - Apr 2020</p>
                             </div>
                             <div class="col-md-8" style="text-align: justify;line-height: 100%;">
-                                <h5 style="font-weight: bold;">Electrical Engineer (Co-op)</h5>
-                                <p style="color: #757575;line-height: 160%;">Info here</p>
+                                <h5 style="font-weight: bold;">Construction Services Coordinator/Electrical Engineer (Co-op)</h5>
+                                <p style="color: #757575;line-height: 160%;">Worked as a project manager for engineering contracts on behalf of the Department of National Defence, and the Canadian Forces. Supported various interdisciplinary projects alongside a team of professionals.</p>
                                 <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
                                 <span style="color:#607D8B;"> Victoria, BC &nbsp;|&nbsp; </span>
                                 <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://corvusenergy.com/" target="_blank">corvusenergy.com</a>
+                                <a style="color:#607D8B;" href="https://www.dcc-cdc.gc.ca/" target="_blank">dcc-cdc.gc.ca/</a>
                             </div>
                         </div>
 
@@ -248,16 +251,16 @@
 
                         <div class="row" style="padding-bottom: 2.5vh;">
                             <div class="col-md-4" style="text-align: left;">
-                                <h5 style="font-weight: bold">Corn Rnaches</h4>
+                                <h5 style="font-weight: bold">Corn Ranches</h4>
                                 <p style="color: #757575;line-height: 80%;">March 2018 - Aug 2018</p>
                             </div>
                             <div class="col-md-8" style="text-align: justify;line-height: 100%;">
                                 <h5 style="font-weight: bold;">Ranch Hand</h5>
-                                <p style="color: #757575;line-height: 160%;">Info here</p>
+                                <p style="color: #757575;line-height: 160%;">Corn Ranches is the leading independent provider of corn seed, product, and consulting in Western Canada. Operating on the century-old family farm in central Alberta, Corn Ranches focuses on growing customer yields and profits.</p>
                                 <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
                                 <span style="color:#607D8B;">Camrose, AB &nbsp;|&nbsp;</span>
                                 <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://www.crescentpointenergy.com/" target="_blank">crescentpointenergy.com</a>
+                                <a style="color:#607D8B;" href="https://cornranches.com" target="_blank">cornranches.com</a>
                             </div>
                         </div>
 
