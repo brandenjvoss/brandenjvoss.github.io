@@ -16,7 +16,7 @@
 
 .nav-container {
     position: relative;
-    padding-bottom: 280px;
+    padding-bottom: 250px;
     z-index: 4;
 	width: 96%;
     text-align: center;
@@ -68,3 +68,150 @@ nav {
   nav a:hover::before {
     width: 100%;
   }
+
+  .col-md-4 {
+    line-height: 200%;
+    justify-content: center;
+    align-content: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 7vh;
+}
+
+  .cardsclass figure {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+
+.cardsclass figure figcaption {
+    padding: 20px 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.cardsclass figure a { 
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.cardsclass figure .icon {
+    background: #607D8B;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+}
+
+#projects figure .icon span {
+	font-size: 18px;
+	line-height: 18px;
+	padding: 15px;
+}
+
+.cardsclass figure img {
+    height: 300px;
+    width: 100%;
+}
+
+.cardsclass figure h3 {
+    color: #FFF;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+figure.effect {
+    background: #607D8B;
+    color: white;
+}
+
+figure.effect h3 {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect p {
+    padding-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%,0,0);
+    transform: translate3d(100%,0,0);
+    font-size: medium;
+}
+
+figure.effect img {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100%);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px,0,0);
+    transform: translate3d(-10px,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+	opacity: 0.1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect:hover h3 {
+	opacity: 1;
+}
+
+figure.effect h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect figcaption {
+    text-align: left;
+}
+
+.cardsclass .row > div {
+    margin-bottom: 30px;
+}
