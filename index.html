@@ -1,12 +1,15 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
 
+    <meta name="description" content="Resume and Portfolio.">
+    <meta name="keywords" content="Resume, Engineer, Student, GitHub, Branden Voss">
+    <meta name="author" content="Branden Voss">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branden Voss</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <link rel="stylesheet" href="styles.css">
 
@@ -14,60 +17,182 @@
 
 <body>
 
-    <div id="fullpage">
+<!------------------------------- Home Section ------------------------------->
 
-        <div class="background">
-            
+    <div id="fullpage">
+        <div class="homeBackground">
             <div id="home">
-                <div class="hcontainer">
-                    <h1 style="font-size: 7rem; color: white; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 10px">Branden Voss</h1>
-                    <hr style="width:850px; margin-bottom: 2vh; margin-top:2.5vh; height: 0.5px; opacity: 50%">
+                <div class="container">
+                    <h1 style="font-size: 9rem; color: white; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 10px">Branden Voss</h1>
+                    <hr style="width: 850px; margin-bottom: 2vh; margin-top:2.5vh; height: 0.5px; opacity: 50%">
                     <div class="nav-container">
                         <nav>
                             <ul>
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#profile">Profile</a></li>
-                                <li><a href="#skills">Skills</a></li>
                                 <li><a href="#projects">Projects</a></li>
+                                <li><a href="#skills">Skills</a></li>
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                     <p style="font-size: 2.6rem; color: white; font-family: 'Raleway'; padding-top: 10px">My Online Resume and Portfolio (In-progress)</p>
-                </div> 
+                </div>
             </div>
         </div>
 
-        <div id="profile"> 
-            <div class="pcontainer">
-                <h1 style="font-size: 3rem; color: black; margin-top: 60px;">Profile</h1>
-                <img src="img/profile.png">
-                <div class="row">
-                    <h2 style="font-size: 2rem; color: black; margin-top: 60px;">About Me</h2>
-                    <p>I am currently a fourth year Electrical Engineering student at the University of Victoria.</p>
-                </div>
-                <div class="justify body-text">
-                    <h1 style="color: #788E99">Check Out:</h1>
-                    <div id="quick-links-container">
-                        <div class="links-container" id="links-container1">
-                            <div class="web-link">
-                                <div class="links-inner">
-                                    <a class="square-button" href="https://www.linkedin.com/in/bjvoss/"><i class="fa-brands fa-linkedin "></i> <b>LinkedIn</b></a>
-                                </div>
-                                <div class="links-inner">
-                                    <a class="square-button" href="https://github.com/brandenjvoss"><i class="fa-brands fa-github "></i> <b>GitHub</b></a>
-                                </div>
-                            </div>
-                        </div>
+<!------------------------------- Profile Section ------------------------------->
+
+        <div id="profile">
+
+            <nav class="navbar navbar-inverse navbarstyle">
+                <ul class="nav navbar-nav" style="margin-top: -10px;">
+                  <li><a href="#home" class="navbuttonformat intro-1">Home</a></li>
+                  <li><a href="#profile" class="navbuttonformat intro-start">Profile</a></li>
+                  <li><a href="#projects" class="navbuttonformat intro-3">Projects</a></li>
+                  <li><a href="#skills" class="navbuttonformat intro-4">Skills</a></li>
+                  <li><a href="#contact" class="navbuttonformat intro-4">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="container">
+                <h1 style="color: black; margin-top: 60px">Profile</h1>
+                <p>Currently a student athlete studying Electrical Engineering at the University of Victoria.</p>
+                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4;">
+
+                <div>
+                    <div class="col-md-4">
+                        <h3>Education</h3>
+                        <p>I am in my fourth year at Uvic and am a forward on the Vikes hockey team. This last season I was given the opportunity to be a alternate captain and took on responsibilities to help lead the my teammates.</p>
+                    </div>
+                
+                    <div class="col-md-4">
+                        <img src="img/profile.png">
+                        <h3>About Me</h3>
+                        <p>I am most interested in... I grew up in Camrose, Alberta... I hope to... My goals are... Im passionate about... I love spending time with friends and family because thats whats matters most.</p>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h3>Interests</h3>
+                        <p>I enjoy playing sports, fishing, hiking and being around friends. I love physical activity and I'm always in to learn new skills and try new things.</p>
                     </div>
                 </div>
             </div>
+            <p style="text-align: center;">I put this website together out of interest using HTML and CSS. I wrote it in Visual Studio Code and it is hosted through GitHub Pages.</p>
         </div>
 
+<!------------------------------- Projects Section ------------------------------->
 
-    
+        <div class="container" style="background-color: lightgray;">
+            <div id="projects">
+                <h1 style="color: black; margin-top: 60px">Projects</h1>
+                <p>These are a few projects I have done inspired by personal interest, work experience and school related.</p>
+                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4;">
+            </div>
+            <div class="cardsclass container" style="width: 800px;">
+                <div class="row">
+                  <!--firstcard-->
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <figure class="effect" style="border: 2px grey solid">
+                      <img src="/images/DAC.jpg" alt="">
+                      <figcaption>
+                        <h3>DAC Research</h3>
+                        <p>Direct Air Capture (DAC), technology of the future.</p>
+                        <p>
+                          <strong>Skills:</strong>
+                          <br>
+                          Technical Writing, Research, Data Management
+                        </p>
+                        <a href="/pages\projects\DAC.html">Read more</a>
+                        <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
+                          <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
+                        </span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--firstcardend-->
+                  <!--secondcard-->
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <figure class="effect" style="border: 2px grey solid;">
+                      <img src="/images\Assembly Render.JPG" alt="">
+                      <figcaption>
+                        <h3>Turbine Gearbox Design</h3>
+                        <p>Tides are more predictable than the wind or sun. </p>
+                        <p>
+                          <strong>Skills:</strong>
+                          <br>
+                          Stress/Fatigue Calculations, CAD, Gearing, Technical Writing, Communications
+                        </p>
+                        <a href="/pages\projects\TTG.html">Read more</a>
+                        <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
+                          <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
+                        </span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--secondcardend-->
+                  </div>
+                  <!--row_end-->
+                  <!--row2_start-->
+                  <div class="row">
+                  <!--thirdcard-->
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <figure class="effect " style="border: 2px grey solid;">
+                      <img src="images\UDB.JPG" alt="">
+                      <figcaption>
+                        <h3 style="line-height: 1.3;">Energy-Harvesting <br> Solution</h3>
+                        <p>Because cable management is tedious. 
+                        </p>
+                        <p>
+                          <strong>Skills:</strong>
+                          <br>
+                          Machining, CAD, 3D Printing, Assembly, Electronics, Soldering
+                        </p>
+                        <a href="/pages\projects\UDB.html">Read more</a>
+                        <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
+                          <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
+                        </span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--thirdcardend-->
+                  <!--fourthcard-->
+                  <div class="col-md-6 col-sm-12 col-xs-12">
+                    <figure class="effect " style="border: 2px grey solid;">
+                      <img src="/images\OCD.JPG" alt="">
+                      <figcaption>
+                        <h3>Optical Calibration Device</h3>
+                        <p>Image recognition works better with reliable data.
+                        </p>
+                        <p>
+                          <strong>Skills:</strong>
+                          <br>
+                          CAD, Machining, Mechatronics
+                        </p>
+                        <a href="/pages\projects\OCD.html">Read more</a>
+                        <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
+                          <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
+                        </span>
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <!--fourthcard_end-->
+                </div>
+                <!--row2_end-->
+                <hr>
+                <p style="margin-bottom: 40px;line-height: 170%;">
+                    <strong>Note:</strong> this section is still partially under construction. In the mean time, for more information about
+                    my personal projects, check out <a href="docs/BrandenVoss_Resume.pdf" style="color:#607D8B"
+                      target="_blank">
+                      my resume
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </p>
+        </div>
+        </div>
+       
+
     </div>
-
+    
 </body>
-
 </html>

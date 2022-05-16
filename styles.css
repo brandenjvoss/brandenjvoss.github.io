@@ -1,9 +1,4 @@
-body {
-    margin: 0;
-    text-align: center;
-}
-
-.background{
+.homeBackground {
     background-image: url(img/tofino.png);
     height: 100vh;
     background-attachment: fixed;
@@ -12,146 +7,64 @@ body {
     background-size: cover;
 }
 
-.hcontainer {
-    padding-bottom:280px;
-    z-index: 4;
-    position:relative;
-	width: 100%;
+.container {
+    position: relative;
+    width: 100%;
     text-align: center;
+    padding-bottom: 100px;
 }
 
 .nav-container {
-    position: -webkit-sticky;
-    position: sticky;
-    padding-bottom:280px;
+    position: relative;
+    padding-bottom: 280px;
     z-index: 4;
-	width: 100%;
+	width: 96%;
     text-align: center;
-}
-
-footer {
-    background: none;
-    align-items: center;
 }
 
 nav {
-  float: center;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline-block;
-  margin-left: 70px;
-  padding-top: 23px;
-
-  position: relative;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #000;
-}
-
-nav a::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background-color: #444;
-
-  position: absolute;
-  top: 0;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-nav a:hover::before {
-  width: 100%;
-}
-
-.pcontainer {
-    padding-bottom:210px;
-    z-index: 4;
-    position:relative;
-	width: 100%;
+    float: center;
     text-align: center;
-}
-
-.body-text {
-    background-color: rgb(67, 66, 66);
-    border-radius: 5px;
-    padding: 20px;
-    position: relative;
-    margin: 1% auto;
-    max-width: 650px;
-    line-height: 1.5;
-    text-align: left;
-    text-justify: inter-word;
-  }
-  .justify{
-    text-align:justify;
-  }
-
-  .quick-links-container p {
-    line-height: 2;
-  }
-
-  .links-container {
-    position: absolute;
-    right: 0;
-    width: 20%;
-    min-width: 80px;
-    display: grid;
-    float: right;
-    padding: 3%;
   }
   
-  #links-container1 {
-    top: 15%;
-  }
-
-  .links-container {
+  nav ul {
+    margin: 0;
     padding: 0;
-    width: auto;
-    font-size: 12px;
-  }
-
-  #links-container1 {
-    top: 20%;
-  }
-
-  .links-inner {
-    color: white;
-    margin-bottom: 20%;
-    min-width: 120px;
-  }
-
-  .square-button {
-    opacity: 1;
-    display: block;
-    text-decoration: none;
-    color: #788E99;
-    border: 1px solid #788E99;
-    border-radius: 3px;
-    transition: .4s;
+    list-style: none;
     text-align: center;
-    min-width: 90px;
-    margin: 2.75px 7px 2.75px 0;
-    padding: 3px 10px;
   }
-
-  .square-button:hover {
-    background: #788E99;
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    text-align: center;
+    position: relative;
+  }
+  
+  nav a {
     color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: #444;
+  }
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
   }
