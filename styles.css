@@ -77,7 +77,7 @@ nav a:hover::before {
     margin: 1% auto;
     max-width: 650px;
     line-height: 1.5;
-    text-align: left;
+    text-align: relative;
     text-justify: inter-word;
 }
 
