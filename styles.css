@@ -154,6 +154,7 @@ nav a:hover::before {
     position: relative;
     overflow: hidden;
     display: flex;
+    filter: drop-shadow(10px 10px 10px #525354);
 }
 
 .cardsclass figure figcaption {
@@ -284,8 +285,7 @@ figure.effect figcaption {
 }
 
 .navbuttonformat {
-    color: whitesmoke !important; 
-    font-size: 2rem; 
+    color: whitesmoke !important;
 }
 
 .navbuttonformat:hover {
@@ -293,17 +293,12 @@ figure.effect figcaption {
     text-decoration: overline !important;
 }
 
-/* .imageformat {
-    width:50%; 
-    position:absolute; 
-    top:62.5%; left:50%; 
-    transform: translate(-50%,-50%);
-} */
-
 .navbarstyle {
-    background-color: rgb(83, 81, 81); 
+    background-color: #444; 
     height:85px !important; 
-    position: sticky; top:0; z-index: 999; 
+    position: sticky;
+    top: 0;
+    z-index: 999; 
     width: 100%;
     border-top: 2px #607D8B solid;
     border-bottom: 10px #607D8B solid;
@@ -314,11 +309,6 @@ figure.effect figcaption {
     margin-bottom: 0px !important;
     border-radius: 0 !important;
 }
-
-/* .pagecontentstyle {
-    text-align: center;
-    color: black;
-} */
 
 .navbar-nav {
     float:none;
@@ -331,18 +321,3 @@ figure.effect figcaption {
     display: inline-block;
     float: none;
 }
-
-/* .scroll-down {
-    height: 80px;
-    width: 70px;
-    display: block;
-    position: absolute;
-    bottom: 3vh;
-    background-color: rgb(83, 81, 81);
-    text-align: center;
-    z-index: 6;
-    border: whitesmoke 2px solid;
-    cursor: pointer;
-    border-radius: 3000px;
-    left: calc(50% - 35px);
-} */
