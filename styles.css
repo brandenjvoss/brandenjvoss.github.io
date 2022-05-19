@@ -14,6 +14,8 @@
     padding-bottom: 100px;
 }
 
+/*************************** Navigation bar on home page ***************************/
+
 .nav-container {
     position: relative;
     padding-bottom: 250px;
@@ -69,6 +71,8 @@ nav a:hover::before {
     width: 100%;
 }
 
+/*************************** Contact Buttons ***************************/
+
 .body-text {
     background-color: rgb(67, 66, 66);
     border-radius: 5px;
@@ -85,13 +89,23 @@ nav a:hover::before {
     text-align: justify;
 }
 
+.column {
+    float: left;
+    width: 33.33%;
+}
+  
+ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .quick-links-container p {
     line-height: 2;
 }
 
 .links-container {
-    position: absolute;
-    width: 20%;
     min-width: 80px;
     display: grid;
     padding: 3%;
@@ -135,6 +149,8 @@ nav a:hover::before {
     background: #788E99;
     color: white;
 }
+
+/*************************** Project Cards ***************************/
 
 .col-md-4 {
     line-height: 200%;
@@ -283,6 +299,8 @@ figure.effect figcaption {
 .cardsclass .row > div {
     margin-bottom: 30px;
 }
+
+/*************************** Navigation bar that moves with scroll ***************************/
 
 .navbuttonformat {
     color: whitesmoke !important;
