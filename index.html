@@ -1,328 +1,660 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <meta name="description" content="Resume and Portfolio.">
-    <meta name="keywords" content="Resume, Engineer, Student, GitHub, Branden Voss">
-    <meta name="author" content="Branden Voss">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Branden Voss</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Branden Voss</title>
+  <meta name="description" content="Resume and Portfolio.">
+  <meta name="keywords" content="Resume, Electrical Engineer, Student, GitHub, Branden Voss">
+  <meta name="author" content="Branden Voss">
 
-    <link rel="stylesheet" href="styles.css">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/cadb263b0f.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!------------------------------- Home Section ------------------------------->
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-transparent">
+    <div class="container d-flex align-items-center justify-content-between">
 
-    <div class="homeBackground">
-        <div id="home">
-            <div class="container">
-                <h1 style="font-size: 9rem; color: white; font-weight: bold; font-family: Verdana, Geneva, Tahoma, sans-serif; padding-bottom: 10px;">Branden Voss</h1>
-                <hr style="width: 850px; margin-bottom: 2vh; margin-top:2.5vh; height: 0.5px; opacity: 50%">
-                <div class="nav-container">
-                    <nav>
-                        <ul>
-                            <li><a href="#profile">Profile</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#experience">Experience</a></li>
-                            <li><a href="#ecce">ECCE 2022</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <p style="font-size: 2.6rem; color: white; font-family: 'Raleway'; padding-bottom: 450px;">My Online Resume and Portfolio (In-progress)</p>
-                <p style="text-align: center; color: white;">I put this website together out of interest to learn new skills using HTML and CSS. I wrote it in Visual Studio Code and it is hosted through GitHub Pages.</p>
-            </div>
-        </div>
-    </div>
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>Branden Voss</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
 
-    <nav class="navbar navbar-inverse navbarstyle">
-        <ul class="nav navbar-nav" style="margin-top: -10px;">
-            <li><a href="#home" class="navbuttonformat intro-1">Home</a></li>
-            <li><a href="#profile" class="navbuttonformat intro-start">Profile</a></li>
-            <li><a href="#projects" class="navbuttonformat intro-3">Projects</a></li>
-            <li><a href="#experience" class="navbuttonformat intro-3">Experience</a></li>
-            <li><a href="#ecce" class="navbuttonformat intro-4">ECCE 2022</a></li>
-            <li><a href="#contact" class="navbuttonformat intro-4">Contact</a></li>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Me</a></li>
+          <li><a class="nav-link scrollto" href="#services">Experience</a></li>
+          <li class="dropdown"><a href="#portfolio"><span>Projects</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Alarm Clock</a></li>
+              <li class="dropdown"><a href="#"><span>Machine Learning For Electric Motor Fault Detection</span> <i class="bi bi-chevron-right"></i></a>
+                <!-- <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul> -->
+              </li>
+              <li><a href="#">Autonomous Robot</a></li>
+              <li><a href="#">Aircraft Tracker</a></li>
+              <li><a href="#">Music Reactive LED Lights</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="#testimonials">Feedback</a></li>
+          <li><a class="nav-link scrollto" href="#team">Accolades</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-    </nav>
-
-<!------------------------------- Profile Section ------------------------------->
-
-        <div id="profile">
-
-            <div class="container">
-                <h1 style="color: #607D8B; margin-top: 60px">Profile</h1>
-                <p>Currently a student athlete studying Electrical Engineering at the University of Victoria.</p>
-                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4;">
-
-                <div>
-                    <div class="col-md-4 fade-in">
-                        <h4 style="color: #607D8B; padding-top: 100px;">Education</h4>
-                        <p>I am in my fourth year at Uvic and have been a forward on the Vikes hockey team since I started my studies. This last season I was given the opportunity to be a alternate captain and took on responsibilities to help lead my teammates.</p>
-                        <img style="filter: drop-shadow(10px 10px 10px #525354);" src="img/vikesHockey.png">
-                    </div>
-                
-                    <div class="col-md-4 fade-in">
-                        <img style="filter: drop-shadow(10px 10px 10px #525354);" src="img/profile.png">
-                        <h4 style="color: #607D8B; padding-top: 10px;">About Me</h4>
-                        <p>I am most interested in... I grew up in Camrose, Alberta... I hope to... My goals are... Im passionate about... I love spending time with friends and family because thats whats matters most.</p>
-                    </div>
-
-                    <div class="col-md-4 fade-in">
-                        <h4 style="color: #607D8B; padding-top: 100px;">Interests</h4>
-                        <p>I enjoy playing sports, fishing, hiking and being around friends. I love physical activity and I'm always in to learn new skills and try new things.</p>
-                        <br>
-                        <img style="filter: drop-shadow(10px 10px 10px #525354);" src="img/education.png">
-                    </div>
-                </div>
-            </div>
-            <p style="text-align: center; margin-bottom: 95px; line-height: 170%; font-size: larger;"><strong>Check out my </strong><a href="docs/BrandenVoss_Resume.pdf" style="color:#607D8B" target="_blank"> resume</i></a><strong> here.</strong></p>
-        </div>
-
-<!------------------------------- Projects Section ------------------------------->
-
-        <div class="container" style="background-color: lightgray;">
-            <div id="projects">
-                <h1 style="color: #607D8B; margin-top: 60px">Projects</h1>
-                <p>These are a few projects I have done inspired by personal interest, work experience and classroom studies.</p>
-                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4">
-            </div>
-            <div class="cardsclass container" style="width: 800px; color: lightcyan">
-
-                <div class="row" style="padding-top: 100px;">
-
-                    <!-- Electric Motor Fault Detection Model -->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <figure class="effect" style="border: 2px grey solid">
-                            <img src="img/faultDetection.png" alt="machine learning">
-                            <figcaption>
-                                <h3>Machine Learning for Electric Motor Fault Detection</h3>
-                                <p></p>
-                                <p><strong>Skills:</strong><br></p>
-                                <a href="projects/EMresearch.html">Read more</a>
-                                <!-- <span class="icon" style="border-left: 2px grey solid; border-bottom: 2px grey solid;">
-                                <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
-                                </span> -->
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                    <!-- Alarm Clock -->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <figure class="effect" style="border: 2px grey solid;">
-                            <img src="img/AlarmClockPCB.png" alt="">
-                            <figcaption>
-                                <h3>Alarm Clock</h3>
-                                <p></p>
-                                <p><strong>Skills:</strong><br></p>
-                                <a href="projects/AlarmClock.html">Read more</a>
-                                <!-- <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
-                                <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
-                                </span> -->
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-                <!--row_end-->
-
-                <div class="row">
-
-                    <!-- Music Reactive LED Strip -->
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <figure class="effect" style="border: 2px grey solid;">
-                            <img src="img/LEDstrip.jpg" alt="">
-                            <figcaption>
-                                <h3>Music Reactive LED Strip</h3>
-                                <p></p>
-                                <p><strong>Skills:</strong><br></p>
-                                <a href="projects/MusicLED.html">Read more</a>
-                                <!-- <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
-                                <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
-                                </span> -->
-                            </figcaption>
-                        </figure>
-                    </div>
-                
-                    <div class="col-md-6 col-sm-12 col-xs-12">
-                        <figure class="effect" style="border: 2px grey solid;">
-                            <img src="img/PWMHeater.png" alt="">
-                            <figcaption>
-                                <h3>PWM Heater Control for Fuse Testing Device</h3>
-                                <p></p>
-                                <p><strong>Skills:</strong><br></p>
-                                <a href="projects/PWMHeater.html">Read more</a>
-                                <!-- <span class="icon" style="border-left: 2px grey solid;border-bottom: 2px grey solid;">
-                                <span class="fas fa-external-link-alt" style="padding:30%; font-size:large"></span>
-                                </span> -->
-                            </figcaption>
-                        </figure>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-
-<!------------------------------- Experience Section ------------------------------->
-
-        <div id="experience"> 
-            <div class="container" style="width:800px; text-align: center;">
-                <h1 style="color: #607D8B; margin-top: 60px;">Experience</h1>
-                <p style="color: black;"></p>
-                <hr> 
-                  
-                <div>
-                    <h3 style="color: #607D8B;text-align: left;">Education:</h3>
-
-                    <div class="row" style="padding-bottom: 2.5vh;" >
-                        <div class="col-md-4" style="text-align: left;">
-                            <h5 style="font-weight: bold">University of Victoria</h4>
-                            <p style="color: #757575;line-height: 80%;">2018 - Present</p>
-                        </div>
-                        <div class="col-md-8" style="text-align: left;line-height: 100%;">
-                            <h5 style="font-weight: bold;">Bachelor of Engineering (BEng) - Electrical Engineering (Co-op)</h5>
-                            <p style="color: #757575;line-height: 150%;">Assistant Captain for the University of Victoria Vikes Men’s Hockey Team</p>
-                            <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span> 
-                            <span style="color:#607D8B;"> Victoria, BC</span>  
-                        </div>
-                    </div>
-
-                        <br>
-                        
-                        <hr>
-                        <h3 style="color: #607D8B;text-align: left;">Career:</h3>
-                        <div class="row" style="padding-bottom: 2.5vh;">
-                            <div class="col-md-4" style="text-align: left;">
-                                <h5 style="font-weight: bold">Industrial Plankton</h4>
-                                <p style="color: #757575;line-height: 80%;">Jan 2022 - Apr 2022</p>
-                            </div>
-                            <div class="col-md-8" style="text-align: justify;line-height: 100%;">
-                                <h5 style="font-weight: bold;">Manufacturing and Design Engineer (Co-op)</h5>
-                                <p style="color: #757575;line-height: 160%;">Worked with a team of professionals to aid in design and manufacturing of Industrial Plankton’s product line of bioreactors for aquaculture. </p>
-                                <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
-                                <span style="color:#607D8B;">Victoria, BC &nbsp;|&nbsp;</span>
-                                <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://industrialplankton.com" target="_blank">industrialplankton.com</a>
-                            </div>
-                        </div>
-
-                        <div class="row" style="padding-bottom: 2.5vh;">
-                            <div class="col-md-4" style="text-align: left;">
-                                <h5 style="font-weight: bold">University of Victoria</h4>
-                                <p style="color: #757575;line-height: 80%;">May 2021 - Sep. 2021</p>
-                            </div>
-                            <div class="col-md-8" style="text-align: justify;line-height: 100%;">
-                                <h5 style="font-weight: bold;">Electrical Engineering Undergraduate Research (Co-op)</h5>
-                                <p style="color: #757575;line-height: 160%;">Worked in research and development to create a robust machine learning algorithm for detecting static eccentric faults in three phase induction motors using MATLAB. During my work I had the opportunity to author a conference proceeding which I will be presenting at IEEE Energy Conversion Congress and Exposition 2022 in Detroit, Michigan.</p>
-                                <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
-                                <span style="color:#607D8B;">Victoria, BC &nbsp;|&nbsp;</span>
-                                <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://ece.engr.uvic.ca/~ilampari/" target="_blank">ece.engr.uvic.ca/~ilampari/</a>
-                            </div>
-                        </div>
-
-                        <br>
-
-                        <div class="row" style="padding-bottom: 2.5vh;">
-                            <div class="col-md-4" style="text-align: left;">
-                                <h5 style="font-weight: bold">Defence Construction Canada</h4>
-                                <p style="color: #757575;line-height: 80%;">Jan 2020 - Apr 2020</p>
-                            </div>
-                            <div class="col-md-8" style="text-align: justify;line-height: 100%;">
-                                <h5 style="font-weight: bold;">Construction Services Coordinator/Electrical Engineer (Co-op)</h5>
-                                <p style="color: #757575;line-height: 160%;">Worked as a project manager for engineering contracts on behalf of the Department of National Defence, and the Canadian Forces. Supported various interdisciplinary projects alongside a team of professionals.</p>
-                                <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
-                                <span style="color:#607D8B;"> Victoria, BC &nbsp;|&nbsp; </span>
-                                <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://www.dcc-cdc.gc.ca/" target="_blank">dcc-cdc.gc.ca/</a>
-                            </div>
-                        </div>
-
-                        <br>
-
-                        <div class="row" style="padding-bottom: 2.5vh;">
-                            <div class="col-md-4" style="text-align: left;">
-                                <h5 style="font-weight: bold">Corn Ranches</h4>
-                                <p style="color: #757575;line-height: 80%;">March 2018 - Aug 2018</p>
-                            </div>
-                            <div class="col-md-8" style="text-align: justify;line-height: 100%;">
-                                <h5 style="font-weight: bold;">Ranch Hand</h5>
-                                <p style="color: #757575;line-height: 160%;">Corn Ranches is the leading independent provider of corn seed, product, and consulting in Western Canada. Operating on the century-old family farm in central Alberta, Corn Ranches focuses on growing customer yields and profits.</p>
-                                <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
-                                <span style="color:#607D8B;">Camrose, AB &nbsp;|&nbsp;</span>
-                                <span class="fas fa-link" style="color:#607D8B;"></span>
-                                <a style="color:#607D8B;" href="https://cornranches.com" target="_blank">cornranches.com</a>
-                            </div>
-                        </div>
-
-                        <br>
-
-                    </div>
-
-                <br>
-
-            </div>
-        </div>
-
-<!------------------------------- ECCE 2022 Section ------------------------------->
-        <div class="container" style="background-color: lightgray;">
-            <div id="ecce">
-                <h1 style="color: #607D8B; margin-top: 60px">Energy Conversion Congress and Exposition 2022</h1>
-                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4;">
-                <p>My work on using machine learning models to detect static eccentricity in 3-phase induction motors has been accepted for presentation at ECCE 2022.
-                <br> I am currently working with my professor to make revisions to the paper and put together a presentation of the proposed work that I would like to share here.
-                </p>
-            </div>
-        </div>
-
-<!------------------------------- Contact Section ------------------------------->
-        <div class="container" style="background-color: rgb(67, 66, 66);">
-            <div id="contact">
-                <h1 style="color: whitesmoke; margin-top: 60px">Contact</h1>
-                <p style="color: whitesmoke; font-size: medium;">If you would like to connect with me, check out my LinkedIn, GitHub or send me an Email.<br>Thanks for visiting my site.</p>
-                <hr style="width: 850px; height: 1px; background-color: grey; opacity: 0.4;">
-
-                <div class="justify body-text">
-
-                    <div class="links-container" id="links-container1">
-                        <div class="web-link">
-
-                            <div class="row">
-                                <div class="column">
-                                    <div class="links-inner">
-                                        <a class="square-button" href="https://www.linkedin.com/in/bjvoss/"><i class="fa-brands fa-linkedin "></i> <b>LinkedIn</b></a>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="links-inner">
-                                        <a class="square-button" href="https://github.com/brandenjvoss"><i class="fa-brands fa-github "></i> <b>GitHub</b></a>
-                                    </div>
-                                </div>
-                                <div class="column">
-                                    <div class="links-inner">
-                                        <a class="square-button" href="mailto:brandenvoss97@hotmail.com?"><i class="fa-solid fa-envelope "></i> <b>Email</b></a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
 
     </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container" data-aos="fade-up">
+      <h1>Branden Voss</h1>
+      <h2>My Online Resume and Portfolio (In-progress)</h2>
+      <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
+      <br>
+      <br>
+      <p>
+        I put this website together out of an interest to learn new skills using HTML and CSS. I wrote it in 
+        Visual Studio Code and it is hosted through GitHub Pages.
+      </p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="row no-gutters">
+          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="content">
+              <h3>About Me</h3>
+              <img style="filter: drop-shadow(10px 10px 10px #525354); margin-bottom: 50px;" src="profile.png">
+              <p>
+                I am currently a student athlete studying Electrical Engineering at the University of Victoria. 
+                I'm in my fourth year at Uvic and have been a forward on the Vikes hockey team since I 
+                started my studies. I'm originally from Camrose Alberta and have lived in other parts of the 
+                province while playing junior hockey prior to attending university. In conjunction to my engineering 
+                degree I'm also pursuing a business minor. I see the business minor as a good compliment to my studies 
+                and will help me develop some valuable skills to be a better engineer.
+                Uvic has been a great place for my educational and athletic goals to come together. For the past two 
+                hockey seasons I was given the opportunity to be a alternate captain 
+                and took on responsibilities to help lead my teammates. 
+              </p>
+              <a href="BrandenVoss_Resume.pdf" class="about-btn">Check Out My Resume <i class="bx bx-chevron-right"></i></a>
+            </div>
+          </div>
+          <div class="col-xl-7 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <!-- <i class="bx bx-receipt"></i> -->
+                  <img style="filter: drop-shadow(10px 10px 10px #525354); margin-top: 210px; margin-bottom: 50px" src="vikesHockey.png">
+                  <i class="bx bxl-dribbble"></i>
+                  <h4>Interests</h4>
+                  <p> 
+                    I love playing many other sports, fishing, hiking and being around friends. I love physical 
+                    activity and I'm always in to learn new skills and try new things. In terms of my professional interests, I enjoy working with electronics and computational intelligence. 
+                  </p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                  <img style="filter: drop-shadow(10px 10px 10px #525354); margin-top: 210px; margin-bottom: 50px;" src="education.png">
+                  <i class="bx bxl-dribbble"></i>
+                  <h4>Goals</h4>
+                  <p>
+                    I'm passionate about engineering solutions for sustainable energy and transportation. I plan to 
+                    orientate my career so that my skills will can be used in the progress and development of electric 
+                    vehicle transportation and sustainble energy.
+                  </p>
+                </div>
+                <!-- <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <img style="filter: drop-shadow(10px 10px 10px #525354); margin-top: 110px; margin-bottom: 50px;" src="education.png">
+                  <i class="bx bx-images"></i>
+                  <h4>My Skills</h4>
+                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                  <img style="filter: drop-shadow(10px 10px 10px #525354); margin-top: 110px; margin-bottom: 50px;" src="education.png">
+                  <i class="bx bx-shield"></i>
+                  <h4>My Non-Technical Skills</h4>
+                  <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
+                </div> -->
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+<!------------------------------- Experience ------------------------------->
+
+    <section id="services" class="services">
+      <div class="container">
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Experience</h2>
+          <p style="color: black;"></p>
+          <hr> 
+          <div>
+            <h3 style="color: #607D8B;text-align: left;">Education:</h3>
+            <div class="row" style="padding-bottom: 2.5vh;" >
+                <div class="col-md-4" style="text-align: left;">
+                      <h5 style="font-weight: bold">University of Victoria</h4>
+                      <p style="color: #757575;line-height: 80%;">2018 - Present</p>
+                </div>
+                <div class="col-md-8" style="text-align: left;line-height: 100%;">
+                      <h5 style="font-weight: bold;">Bachelor of Engineering (BEng) - Electrical Engineering (Co-op) <br> Business Minor (BCom)</h5>
+                      <p style="color: #757575;line-height: 150%;">Assistant Captain for the University of Victoria Vikes Men’s Hockey Team</p>
+                      <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span> 
+                      <span style="color:#607D8B;"><i class="bx bx-map"></i> Victoria, BC</span>  
+                </div>
+            </div>
+              <br>  
+              <hr>
+                <h3 style="color: #607D8B;text-align: left;">Career:</h3>
+                <div class="row" style="padding-bottom: 2.5vh;">
+                  <div class="col-md-4" style="text-align: left;">
+                    <h5 style="font-weight: bold">Industrial Plankton</h4>
+                      <p style="color: #757575;line-height: 80%;">Jan 2022 - Apr 2022</p>
+                  </div>
+                  <div class="col-md-8" style="text-align: justify;line-height: 100%;">
+                    <h5 style="font-weight: bold;">Manufacturing and Design Engineer (Co-op)</h5>
+                      <p style="color: #757575;line-height: 160%;">Worked with a team of professionals to aid in design and manufacturing of Industrial Plankton’s product line of bioreactors for aquaculture. </p>
+                      <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
+                      <span style="color:#607D8B;"><i class="bx bx-map"></i> Victoria, BC &nbsp;|&nbsp;</span>
+                      <span class="fas fa-link" style="color:#607D8B;"></span>
+                      <a style="color:#607D8B;" href="https://industrialplankton.com" target="_blank"><i class="bx bx-link"></i> industrialplankton.com</a>
+                  </div>
+                </div>
+                <div class="row" style="padding-bottom: 2.5vh;">
+                  <div class="col-md-4" style="text-align: left;">
+                    <h5 style="font-weight: bold">University of Victoria</h4>
+                      <p style="color: #757575;line-height: 80%;">May 2021 - Sep. 2021</p>
+                  </div>
+                  <div class="col-md-8" style="text-align: justify;line-height: 100%;">
+                    <h5 style="font-weight: bold;">Electrical Engineering Undergraduate Research (Co-op)</h5>
+                      <p style="color: #757575;line-height: 160%;">Worked in research and development to create a robust machine learning algorithm for detecting static eccentric faults in three phase induction motors using MATLAB. During my work I had the opportunity to author a conference proceeding which was accepted for presentation at IEEE Energy Conversion Congress and Exposition 2022 in Detroit, Michigan.</p>
+                      <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
+                      <span style="color:#607D8B;"><i class="bx bx-map"></i> Victoria, BC &nbsp;|&nbsp;</span>
+                      <span class="fas fa-link" style="color:#607D8B;"></span>
+                      <a style="color:#607D8B;" href="https://ece.engr.uvic.ca/~ilampari/" target="_blank"><i class="bx bx-link"></i> ece.engr.uvic.ca/~ilampari/</a>
+                  </div>
+                </div>
+                <br>
+                <div class="row" style="padding-bottom: 2.5vh;">
+                  <div class="col-md-4" style="text-align: left;">
+                    <h5 style="font-weight: bold">Defence Construction Canada</h4>
+                      <p style="color: #757575;line-height: 80%;">Jan 2020 - Apr 2020</p>
+                  </div>
+                  <div class="col-md-8" style="text-align: justify;line-height: 100%;">
+                    <h5 style="font-weight: bold;">Construction Services Coordinator/Electrical Engineer (Co-op)</h5>
+                    <p style="color: #757575;line-height: 160%;">Worked as a project manager for engineering contracts on behalf of the Department of National Defence, and the Canadian Forces. Supported various interdisciplinary projects alongside a team of professionals.</p>
+                    <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
+                    <span style="color:#607D8B;"><i class="bx bx-map"></i> Victoria, BC &nbsp;|&nbsp; </span>
+                    <span class="fas fa-link" style="color:#607D8B;"></span>
+                    <a style="color:#607D8B;" href="https://www.dcc-cdc.gc.ca/" target="_blank"><i class="bx bx-link"></i> dcc-cdc.gc.ca/</a>
+                  </div>
+                </div>
+                <br>
+                <div class="row" style="padding-bottom: 2.5vh;">
+                  <div class="col-md-4" style="text-align: left;">
+                    <h5 style="font-weight: bold">Corn Ranches</h4>
+                      <p style="color: #757575;line-height: 80%;">March 2018 - Aug 2018</p>
+                  </div>
+                  <div class="col-md-8" style="text-align: justify;line-height: 100%;">
+                    <h5 style="font-weight: bold;">Ranch Hand</h5>
+                      <p style="color: #757575;line-height: 160%;">Corn Ranches is the leading independent provider of corn seed, product, and consulting in Western Canada. Operating on the century-old family farm in central Alberta, Corn Ranches focuses on growing customer yields and profits.</p>
+                      <span class="fas fa-map-marker-alt" style="color:#607D8B;"></span>
+                      <span style="color:#607D8B;"><i class="bx bx-map"></i> Camrose, AB &nbsp;|&nbsp;</span>
+                      <span class="fas fa-link" style="color:#607D8B;"></span>
+                      <a style="color:#607D8B;" href="https://cornranches.com" target="_blank"><i class="bx bx-link"></i> cornranches.com</a>
+                  </div>
+                </div>
+                <br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="Work_Term_Report03_Uvic copy.pdf">Industrial Plankton</a></h4>
+              <p class="description">PWM Heater Control for Fuse Testing Jig</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="ENGR446_Project_background_Branden_Voss copy.pdf">University of Victoria</a></h4>
+              <p class="description">DC Motor Speed Control For E-bike Conversion System</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx-file"></i></div>
+              <h4 class="title"><a href="An_elegant_machine_learning_model.pdf">University of Victoria</a></h4>
+              <p class="description">Machine Learning for Electric Motor Fault Detection</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-shield"></i></div>
+              <h4 class="title"><a href="Voss_Work_Term_Report_01_DCC copy.pdf">DCC</a></h4>
+              <p class="description">Ground Fault Detection Upgrades at Jetty</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts  section-bg">
+      <div class="container">
+
+        <div class="row no-gutters">
+
+          <!-- <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Co-op Terms</strong> Completed</p>
+            </div>
+          </div> -->
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Co-op Work Terms</strong> Completed</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-check"></i>
+              <span data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Projects</strong> Completed</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-star"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Academic Awards</strong> Recieved</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Cta Section ======= -->
+    <section id="cta" class="cta">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="text-center">
+          <h3>AR Bike Helmet Project</h3>
+          <p> Won first place at the UVic capstone competition. The helmet detects vehicles approaching the user from the rear and notifies them via a projected indicator display. Check out the website here:</p>
+          <a class="cta-btn" href="https://brandenjvoss.github.io/AR_bike_helmet/">AR Bike Helmet Website</a>
+        </div>
+
+      </div>
+    </section><!-- End Cta Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Projects</h2>
+          <p>
+            These are a few projects I have done inspired by personal interest, work experience and classroom studies.
+          </p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="AR Bike Helmet"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Music Reactive LED Strip"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details2.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PWM Monitoring and Generation System"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details3.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Autonomous Cable Robot"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details4.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Machine Learning For Electric Motor Fault Detection"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details5.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Alarm Clock"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details6.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ADS-B Reciever Antenna for Aircraft Tracking"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details7.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Voice Control for Smart Sit Stand Desk"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details8.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ground Fault Detection Methods for Ship to Shore Power"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details9.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Feedback</h2>
+          <p>I asked co-workers, professors, coaches and peers for some feedback.</p>
+        </div>
+
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Feedback 1
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Name 1</h3>
+                <h4>Co-worker</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Feedback 2
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Name 2</h3>
+                <h4>Peer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Feedback 3
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Name 3</h3>
+                <h4>Hockey Coach</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Feedback 4
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Name 4</h3>
+                <h4>Teacher</h4>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
     
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Accolades</h2>
+          <p>
+            I am grateful for the opportunity I've had to attend The University of Victoria 
+            and play for the Vikes mens hockey team. During my time at Uvic I have recieved a few 
+            awards in academics/athletics and projects.
+          </p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up">
+              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Collegiate Hockey Academic All-star 2020-21</h4>
+                <span>President's Honour Roll</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="150">
+              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Collegiate Hockey Academic All-star 2021-22</h4>
+                <span>President's Honour Roll</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="fade-up" data-aos-delay="300">
+              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>IEEE 2022 Design Technical Project Award</h4>
+                <span>Victoria Section First Place</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If you would like to connect with me please check out my LinkedIn, GitHub or send me an email.</p>
+        </div>
+
+        </div>
+
+        <div class="row">
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <!-- <div class="row"> -->
+
+          <div class="col-lg col-md">
+            <!-- <div class="footer-info">
+              <h3>Squadfree</h3>
+              <p class="pb-3"><em>Qui repudiandae et eum dolores alias sed ea. Qui suscipit veniam excepturi quod.</em></p>
+              <p>
+                A108 Adam Street <br>
+                NY 535022, USA<br><br>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p> -->
+              <div class="links-container" id="links-container1">
+                <div class="web-link">
+
+                    <div class="row">
+                        <div class="column">
+                            <div class="links-inner">
+                                <a class="square-button" href="https://www.linkedin.com/in/bjvoss/"><i class="fa-brands fa-linkedin "></i> <b>LinkedIn</b></a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="links-inner">
+                                <a class="square-button" href="https://github.com/brandenjvoss"><i class="fa-brands fa-github "></i> <b>GitHub</b></a>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="links-inner">
+                                <a class="square-button" href="mailto:brandenvoss97@hotmail.com?"><i class="fa-solid fa-envelope "></i> <b>Email</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        <strong><span>Thank you for visiting my resume and portfolio website</span></strong>
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
